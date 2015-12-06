@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var Queue    = require('./lib/queue');
 var Crawler  = require('./lib/crawler');
 var Backlinks = require('./lib/backlinks');
@@ -10,6 +12,8 @@ var backlinks = new Backlinks();
  */
 jobQueue.on('jobReady', function job(job) {
     var data    = JSON.parse(job.data);
+
+    // build your worker here and pass it in
     var crawler = new Crawler(data, backlinks);
     var queue   = crawler.makeQueue();
 
@@ -44,5 +48,6 @@ jobQueue.on('noJob', function () {
 });
 
 var jobs=5;
-while(jobs--)
+while(jobs--) {
    jobQueue.getJob();
+}
