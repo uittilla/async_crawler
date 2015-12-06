@@ -1,0 +1,36 @@
+{
+  "name": "async_crawler",
+  "preferGlobal": true,
+  "version": "0.0.5",
+  "author": "Ibbo (mark.ibbotson)",
+  "description": "a simple web crawler using async",
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uittilla/async_crawler.git"
+  },
+  "keywords": [
+    "web crawler",
+    "http",
+    "spider",
+    "backlinks"
+  ],
+  "dependencies": {
+    "async": "^1.5.0",
+    "cheerio": "0.12.3",
+    "nodestalker": "^0.1.12",
+    "request": "2.27.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  }
+}
