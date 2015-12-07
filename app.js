@@ -50,6 +50,7 @@ jobQueue.on('jobDeleted', function (id, msg, crawler) {
  * Job removed
  */
 jobQueue.on('noJob', function () {
+    console.log("Job Queue now empty, ....");
     process.exit();
 });
 
@@ -57,4 +58,3 @@ var jobs = 5;
 while(jobs--) {
     jobQueue.getJob();
 }
-
