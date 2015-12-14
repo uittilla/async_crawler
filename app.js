@@ -25,7 +25,7 @@ jobQueue.on('jobReady', function job(job) {
         break;
     }
 
-    var crawler = new Crawler(data, worker);
+    var crawler = new Crawler(data, worker, data.max_links);
     var queue   = crawler.makeQueue();
 
     queue.push(data.link);
@@ -33,7 +33,7 @@ jobQueue.on('jobReady', function job(job) {
     queue.drain = function() {
         console.log('all items have been processed');
         console.log("Found %j",crawler.getStore());
-        
+
         jobQueue.deleteJob(job.id, crawler);
         crawler=null;
     }
