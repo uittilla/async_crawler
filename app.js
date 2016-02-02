@@ -1,32 +1,27 @@
 #!/usr/bin/env node
 
-var Queue      = require('./lib/queue');
-var Crawler    = require('./lib/crawler');
-var Backlinks  = require('./lib/backlinks');
-var Confluence = require('./lib/confluence');
+"use strict";
 
-var jobQueue   = new Queue("default");
-var backlinks  = new Backlinks();
-var confluence = new Confluence();
+var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue, backlinks, confluence;
+
+Queue      = require('./lib/queue');
+Crawler    = require('./lib/crawler');
+Backlinks  = require('./lib/backlinks');
+Confluence = require('./lib/confluence');
+
+jobQueue   = new Queue("default");
+backlinks  = new Backlinks();
+confluence = new Confluence();
 
 /**
  * Queue ready
  */
 jobQueue.on('jobReady', function job(job) {
-    var data    = JSON.parse(job.data);
+    var data    = JSON.parse(job.data), worker, crawler, queue;
     // build your worker here and pass it in
-    var worker;
-    switch(data.worker) {
-        case "backlinks":
-            worker = backlinks;
-        break;
-        case "confluence":
-            worker = confluence;
-        break;
-    }
-
-    var crawler = new Crawler(data, worker, data.max_links);
-    var queue   = crawler.makeQueue();
+    worker  = data.worker == "backlinks" ? backlinks : confluence;
+    crawler = new Crawler(data, worker, data.max_links);
+    queue   = crawler.makeQueue();
 
     queue.push(data.link);
 
@@ -49,9 +44,7 @@ jobQueue.on('jobDeleted', function (id, msg, crawler) {
         if(data['current-jobs-ready'] > 0 ) {
             jobQueue.getJob();
         }
-        else if(data['current-jobs-reserved'] > 0) {
-
-        }
+        else if(data['current-jobs-reserved'] > 0) { }
         else {
             jobQueue.emit('noJob');
         }
