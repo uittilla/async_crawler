@@ -1,0 +1,708 @@
+1 0 10
+Pending 10, Current http://www.bbc.co.uk, Found 0
+--------------------------------------------------
+1 0 10
+Pending 10, Current http://www.skysports.com/, Found 13
+--------------------------------------------------
+Redirect https://www.reddit.com
+1 0 10
+Pending 10, Current https://www.reddit.com, Found 0
+--------------------------------------------------
+Redirect http://www.dailymail.co.uk
+1 0 10
+Pending 10, Current http://www.dailymail.co.uk, Found 0
+--------------------------------------------------
+1 0 10
+Pending 10, Current http://www.football-league.co.uk/sky-bet-championship/news/, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.bbc.co.uk/, Found 0
+--------------------------------------------------
+2 7 10
+Pending 10, Current http://www.skysports.com/football/news/12087/10160343/guillem-balague-on-fernando-torres-neymar-gary-neville-and-luis-enrique, Found 4
+--------------------------------------------------
+2 8 10
+Pending 8, Current https://www.reddit.com/r/announcements/, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.dailymail.co.uk/, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.football-league.co.uk/global/football-league.aspx, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.bbc.co.uk/accessibility/, Found 0
+--------------------------------------------------
+3 9 10
+Pending 9, Current http://www.skysports.com/football/news/11669/10160458/jurgen-klopp-holds-liverpool-media-conference-ahead-of-west-ham-clash, Found 6
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.dailymail.co.uk/home/index.html, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.football-league.co.uk/global/fl-trust.aspx, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.bbc.co.uk/id/status, Found 0
+--------------------------------------------------
+4 8 10
+Pending 8, Current http://www.skysports.com/football, Found 9
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.dailymail.co.uk/news/index.html, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.football-league.co.uk/global/reserves.aspx, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.bbc.co.uk/news/, Found 0
+--------------------------------------------------
+5 7 10
+Pending 7, Current http://www.skysports.com/football/news/11667/10160240/former-manchester-united-striker-bebe-cost-club-163165000-a-minute-according-to-leaked-documents, Found 4
+--------------------------------------------------
+3 7 10
+Pending 7, Current https://www.reddit.com/r/art/, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.dailymail.co.uk/ushome/index.html, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.football-league.co.uk/global/youth.aspx, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.bbc.co.uk/sport/, Found 0
+--------------------------------------------------
+6 6 10
+Pending 6, Current http://www.skysports.com/football/news/11661/10160480/ref-watch-olivier-giroud-and-mathieu-flamini-fortunate-says-dermot-gallagher, Found 4
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.dailymail.co.uk/sport/index.html, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current https://www.reddit.com/r/askreddit/, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.football-league.co.uk/news/subscribe/newslettersubscription.aspx, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.bbc.co.uk/weather/, Found 0
+--------------------------------------------------
+7 5 10
+Pending 5, Current http://www.skysports.com/football/news/11662/10159665/race-for-the-premier-league-title-petr-cech-joe-hart-hugo-lloris-kasper-schmeichel-analysed, Found 4
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.dailymail.co.uk/tvshowbiz/index.html, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.football-league.co.uk/, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current https://www.reddit.com/r/askscience/, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.bbc.co.uk/iplayer/, Found 0
+--------------------------------------------------
+8 4 10
+Pending 4, Current http://www.skysports.com/rugby-union/news/12062/10160279/stuart-barnes-reviews-the-opening-round-of-the-six-nations, Found 4
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.dailymail.co.uk/auhome/index.html, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.football-league.co.uk/news/, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.bbc.co.uk/tv/, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current https://www.reddit.com/r/aww/, Found 0
+--------------------------------------------------
+9 3 10
+Pending 3, Current http://www.skysports.com/rugby-union, Found 13
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.dailymail.co.uk/femail/index.html, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.football-league.co.uk/news/the-wall/, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.bbc.co.uk/radio/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.skysports.com/":{"targets":[{"href":"https://www.skybet.com/skybet?offer=188&aff=11758&sba_promo=SKYSPORTS10","anchor":"\n                <h2 class=\"block-header__title\"><div class=\"svg-logo block-header__logo\"><img class=\"svg-logo__image\" src=\"/core/img/internal-logos/Sky-Bet-Logo.svg\" onerror=\"this.onerror=null;this.src=&apos;/core/img/internal-logos/Sky-Bet-Logo.png&apos;\"></div></h2>\n            "},{"href":"https://www.skybet.com/skybet?offer=188&aff=11758&sba_promo=SKYSPORTS10","anchor":"\n                £10 Completely Free            "},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11942&dcmp=ss_betlink_footab","anchor":"\n            <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/16/02/16-9/#{30}/riyad-mahrez-leicester_3411602.jpg?20160206135857\" src=\"/core/img/s.png\" alt=\"Leicester City&apos;s midfielder Riyad Mahrez celebrates\" class=\"features-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/16/02/16-9/30/riyad-mahrez-leicester_3411602.jpg?20160206135857\" class=\"features-block__image auto-size__target\"></noscript>\n  \n</div>\n            "},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11942&dcmp=ss_betlink_footab","anchor":"                    Premier League odds                    "},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11942&dcmp=ss_betlink_footab","anchor":"Can Leicester retain their lead for another 13 games? See the latest Sky Bet odds here."},{"href":"http://www.skybet.com/go/event/18898128?aff=11972&dcmp=ss_betlink_beefytab","anchor":"\n            <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/15/09/16-9/#{30}/beefy-sir-ian-botham-sky-bet_3351425.jpg?20150915155253\" src=\"/core/img/s.png\" alt=\"Sir Ian Botham\" class=\"features-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/15/09/16-9/30/beefy-sir-ian-botham-sky-bet_3351425.jpg?20150915155253\" class=\"features-block__image auto-size__target\"></noscript>\n  \n</div>\n            "},{"href":"http://www.skybet.com/go/event/18898128?aff=11972&dcmp=ss_betlink_beefytab","anchor":"                    Beefy's Bets                    "},{"href":"http://www.skybet.com/go/event/18898128?aff=11972&dcmp=ss_betlink_beefytab","anchor":"Check out Sir Ian Botham's bets for the 3rd ODI against South Africa including a 33/1 double. Bet here"},{"href":"http://www.skybet.com/go/event/18898371?aff=11942&dcmp=ss_betlink_FACUPtab","anchor":"\n            <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/16/01/16-9/#{30}/enner-valencia-west-ham-manchester-city-goal-celebrates_3404160.jpg?20160123191426\" src=\"/core/img/s.png\" alt=\"Enner Valencia (centre) celebrates with team-mates Michail Antonio (left) and Mark Noble (right) after scoring West Ham&apos;s second goal\" class=\"features-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/16/01/16-9/30/enner-valencia-west-ham-manchester-city-goal-celebrates_3404160.jpg?20160123191426\" class=\"features-block__image auto-size__target\"></noscript>\n  \n</div>\n            "},{"href":"http://www.skybet.com/go/event/18898371?aff=11942&dcmp=ss_betlink_FACUPtab","anchor":"                    West Ham v Liverpool                    "},{"href":"http://www.skybet.com/go/event/18898371?aff=11942&dcmp=ss_betlink_FACUPtab","anchor":"Enner Valencia to score and West Ham to beat Liverpool in 90 mins on Tuesday was 3/1 NOW 4/1. Bet here"},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/football/news/12087/10160343/guillem-balague-on-fernando-torres-neymar-gary-neville-and-luis-enrique":{"targets":[{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9757&dcmp=ss_fb_subnav","anchor":"Sky Bet"},{"href":"http://www.skybet.com/go/event/18888339?aff=11758&sba_promo=SKYSPORTS10","anchor":"Neymar to sign for before 3rd September 2016. Click here to bet."},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/football/news/11669/10160458/jurgen-klopp-holds-liverpool-media-conference-ahead-of-west-ham-clash":{"targets":[{"href":"http://www.skybet.com/football/premier-league?aff_id=11941&dcmp=ss_betlink_liverpool","anchor":"Sky Bet"},{"href":"http://www.skybet.com/go/event/18898371/bet?sels=234806145|7/5&aff=11758&sba_promo=SKYSPORTS10","anchor":"West Ham 7/5"},{"href":"http://www.skybet.com/go/event/18898371/bet?sels=234806149|19/10&aff=11758&sba_promo=SKYSPORTS10","anchor":"Liverpool 19/10"},{"href":"http://www.skybet.com/go/event/18898371/bet?sels=234806148|12/5&aff=11758&sba_promo=SKYSPORTS10","anchor":"Draw 12/5"},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/football":{"targets":[{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9757&dcmp=ss_fb_subnav","anchor":"Sky Bet"},{"href":"https://www.skybet.com/skybet?offer=188&aff=11758&sba_promo=SKYSPORTS10","anchor":"\n                <h3 class=\"block-header__title\"><div class=\"svg-logo block-header__logo\"><img class=\"svg-logo__image\" src=\"/core/img/internal-logos/Sky-Bet-Logo.svg\" onerror=\"this.onerror=null;this.src=&apos;/core/img/internal-logos/Sky-Bet-Logo.png&apos;\"></div></h3>\n            "},{"href":"https://www.skybet.com/skybet?offer=188&aff=11758&sba_promo=SKYSPORTS10","anchor":"\n                More            "},{"href":"http://www.skybet.com/go/event/18898371?aff=11942&dcmp=ss_betlink_FACUPtab","anchor":"      <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/16/01/16-9/#{30}/enner-valencia-west-ham-manchester-city-goal-celebrates_3404160.jpg?20160123191426\" src=\"/core/img/s.png\" alt=\"Enner Valencia (centre) celebrates with team-mates Michail Antonio (left) and Mark Noble (right) after scoring West Ham&apos;s second goal\" class=\"bet-promo-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/16/01/16-9/30/enner-valencia-west-ham-manchester-city-goal-celebrates_3404160.jpg?20160123191426\" class=\"bet-promo-block__image auto-size__target\"></noscript>\n  \n</div>        "},{"href":"http://www.skybet.com/go/event/18898371?aff=11942&dcmp=ss_betlink_FACUPtab","anchor":"                    West Ham v Liverpool                "},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11942&dcmp=ss_betlink_footab","anchor":"      <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/16/02/16-9/#{30}/riyad-mahrez-leicester_3411602.jpg?20160206135857\" src=\"/core/img/s.png\" alt=\"Leicester City&apos;s midfielder Riyad Mahrez celebrates\" class=\"bet-promo-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/16/02/16-9/30/riyad-mahrez-leicester_3411602.jpg?20160206135857\" class=\"bet-promo-block__image auto-size__target\"></noscript>\n  \n</div>        "},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11942&dcmp=ss_betlink_footab","anchor":"                    Premier League odds                "},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/football/news/11667/10160240/former-manchester-united-striker-bebe-cost-club-163165000-a-minute-according-to-leaked-documents":{"targets":[{"href":"http://www.skybet.com/football/premier-league?aff_id=11941&dcmp=ss_betlink_manchester_united","anchor":"Sky Bet"},{"href":"http://www.skybet.com/go/class/5/type/10001357?aff=11758&sba_promo=SKYSPORTS10","anchor":"Manchester Utd Specials. Click here to bet."},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/football/news/11661/10160480/ref-watch-olivier-giroud-and-mathieu-flamini-fortunate-says-dermot-gallagher":{"targets":[{"href":"http://www.skybet.com/go/class/5?aff=11758&sba_promo=SKYSPORTS10","anchor":"Bet"},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11758&sba_promo=SKYSPORTS10","anchor":"Premier League. Click here to bet."},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/football/news/11662/10159665/race-for-the-premier-league-title-petr-cech-joe-hart-hugo-lloris-kasper-schmeichel-analysed":{"targets":[{"href":"http://www.skybet.com/go/class/5?aff=11758&sba_promo=SKYSPORTS10","anchor":"Bet"},{"href":"http://www.skybet.com/go/class/5/type/1?aff=11758&sba_promo=SKYSPORTS10","anchor":"Premier League. Click here to bet."},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/rugby-union/news/12062/10160279/stuart-barnes-reviews-the-opening-round-of-the-six-nations":{"targets":[{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9800&dcmp=ss_ru_subnav","anchor":"Sky Bet"},{"href":"http://www.skybet.com/go/event/17844066?aff=11758&sba_promo=SKYSPORTS10","anchor":"Six Nations 2016. Click here to bet."},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]},"http://www.skysports.com/rugby-union":{"targets":[{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9800&dcmp=ss_ru_subnav","anchor":"Sky Bet"},{"href":"https://www.skybet.com/rugby-union/six-nations?aff_id=11982&dcmp=ss_betlink_SIXNATIONSTAB","anchor":"Six Nations odds"},{"href":"https://www.skybet.com/rugby-union/six-nations?aff_id=11982&dcmp=ss_betlink_SIXNATIONSTAB","anchor":"Six Nations odds"},{"href":"https://www.skybet.com/skybet?offer=188&aff=11758&sba_promo=SKYSPORTS10","anchor":"\n                <h3 class=\"block-header__title\"><div class=\"svg-logo block-header__logo\"><img class=\"svg-logo__image\" src=\"/core/img/internal-logos/Sky-Bet-Logo.svg\" onerror=\"this.onerror=null;this.src=&apos;/core/img/internal-logos/Sky-Bet-Logo.png&apos;\"></div></h3>\n            "},{"href":"https://www.skybet.com/skybet?offer=188&aff=11758&sba_promo=SKYSPORTS10","anchor":"\n                More            "},{"href":"http://www.skybet.com/go/class/31/type/10007850?aff=11982&dcmp=ss_betlink_SIXNATIONSTAB","anchor":"      <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/16/01/16-9/#{30}/rugby-six-nations-rory-best-ireland-sergio-parisse-italy-dylan-hartley-england_3406582.jpg?20160127155637\" src=\"/core/img/s.png\" alt=\"Sergio Parisse, Sam Warburton, Rory Best, Dylan Hartley, Greg Laidlaw and Guilhem Guirado at the launch of the 2016 Six Nations Championship\" class=\"bet-promo-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/16/01/16-9/30/rugby-six-nations-rory-best-ireland-sergio-parisse-italy-dylan-hartley-england_3406582.jpg?20160127155637\" class=\"bet-promo-block__image auto-size__target\"></noscript>\n  \n</div>        "},{"href":"http://www.skybet.com/go/class/31/type/10007850?aff=11982&dcmp=ss_betlink_SIXNATIONSTAB","anchor":"                    Six Nations odds                "},{"href":"http://www.skybet.com/go/event/17844066?aff=11982&dcmp=ss_betlink_RUSIXTAB","anchor":"      <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e0.365dm.com/16/02/16-9/#{30}/george-kruis-try-scotland-v-england-six-nations_3411898.jpg?20160206183923\" src=\"/core/img/s.png\" alt=\"Lock George Kruis of England crashes over to score the opening try of the Six Nations clash v Scotland at Murrayfield\" class=\"bet-promo-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e0.365dm.com/16/02/16-9/30/george-kruis-try-scotland-v-england-six-nations_3411898.jpg?20160206183923\" class=\"bet-promo-block__image auto-size__target\"></noscript>\n  \n</div>        "},{"href":"http://www.skybet.com/go/event/17844066?aff=11982&dcmp=ss_betlink_RUSIXTAB","anchor":"                    England Price Boost                "},{"href":"http://www.skybet.com/rugby-union?aff=11982&dcmp=ss_betlink_aviva","anchor":"      <div class=\"auto-size-16/9\">\n  <img data-src=\"http://e2.365dm.com/12/07/402x210/Aviva-Premiership-trophy-1024_2794937.jpg?20130511142840\" src=\"/core/img/s.png\" alt=\"\" class=\"bet-promo-block__image auto-size__target postpone-load postpone-load--fade-in\" aria-hidden=\"true\">\n  <noscript><img src=\"http://e2.365dm.com/12/07/402x210/Aviva-Premiership-trophy-1024_2794937.jpg?20130511142840\" class=\"bet-promo-block__image auto-size__target\"></noscript>\n  \n</div>        "},{"href":"http://www.skybet.com/rugby-union?aff=11982&dcmp=ss_betlink_aviva","anchor":"                    Aviva Premiership                "},{"href":"https://www.skybet.com/skybet?offer=188&sba_promo=SKYSPORTS10&aff=9749&dcmp=ss_main_nav","anchor":"\n                        Sky Bet                    "},{"href":"http://www.skybet.com/","anchor":"Sky Bet"}]}}
+Delete called for  3
+Deleted 3 [ 'DELETED' ]
+10 0 10
+Pending 0, Current http://www.dailymail.co.uk/health/index.html, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current https://www.reddit.com/r/blog/, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.football-league.co.uk/news/sky-bet-championship-news/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.bbc.co.uk":{"targets":[]},"http://www.bbc.co.uk/":{"targets":[]},"http://www.bbc.co.uk/accessibility/":{"targets":[]},"http://www.bbc.co.uk/id/status":{"targets":[]},"http://www.bbc.co.uk/news/":{"targets":[]},"http://www.bbc.co.uk/sport/":{"targets":[]},"http://www.bbc.co.uk/weather/":{"targets":[]},"http://www.bbc.co.uk/iplayer/":{"targets":[]},"http://www.bbc.co.uk/tv/":{"targets":[]},"http://www.bbc.co.uk/radio/":{"targets":[]}}
+Delete called for  2
+Deleted 2 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.sportinglife.com, Found 26
+--------------------------------------------------
+all items have been processed
+Found {"http://www.dailymail.co.uk":{"targets":[]},"http://www.dailymail.co.uk/":{"targets":[]},"http://www.dailymail.co.uk/home/index.html":{"targets":[]},"http://www.dailymail.co.uk/news/index.html":{"targets":[]},"http://www.dailymail.co.uk/ushome/index.html":{"targets":[]},"http://www.dailymail.co.uk/sport/index.html":{"targets":[]},"http://www.dailymail.co.uk/tvshowbiz/index.html":{"targets":[]},"http://www.dailymail.co.uk/auhome/index.html":{"targets":[]},"http://www.dailymail.co.uk/femail/index.html":{"targets":[]},"http://www.dailymail.co.uk/health/index.html":{"targets":[]}}
+Delete called for  4
+Deleted 4 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.freebets.org.uk, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.football-league.co.uk/sky-bet-championship/news/":{"targets":[]},"http://www.football-league.co.uk/global/football-league.aspx":{"targets":[]},"http://www.football-league.co.uk/global/fl-trust.aspx":{"targets":[]},"http://www.football-league.co.uk/global/reserves.aspx":{"targets":[]},"http://www.football-league.co.uk/global/youth.aspx":{"targets":[]},"http://www.football-league.co.uk/news/subscribe/newslettersubscription.aspx":{"targets":[]},"http://www.football-league.co.uk/":{"targets":[]},"http://www.football-league.co.uk/news/":{"targets":[]},"http://www.football-league.co.uk/news/the-wall/":{"targets":[]},"http://www.football-league.co.uk/news/sky-bet-championship-news/":{"targets":[]}}
+Delete called for  1
+Deleted 1 [ 'DELETED' ]
+8 2 10
+Pending 2, Current https://www.reddit.com/r/books/, Found 0
+--------------------------------------------------
+1 0 10
+Pending 10, Current http://www.betting-directory.com, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.sportinglife.com/, Found 26
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.freebets.org.uk/, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.betting-directory.com/, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.sportinglife.com/racing/fast-results, Found 8
+--------------------------------------------------
+Issue detected { [Error: getaddrinfo ENOTFOUND www.affiliatehub.com www.affiliatehub.com:80]
+  code: 'ENOTFOUND',
+  errno: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'www.affiliatehub.com',
+  host: 'www.affiliatehub.com',
+  port: 80 }
+all items have been processed
+Found {}
+Delete called for  6
+Deleted 6 [ 'DELETED' ]
+Redirect http://www.marketingweek.com
+1 0 10
+Pending 10, Current http://www.marketingweek.com, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current https://www.reddit.com/r/creepy/, Found 0
+--------------------------------------------------
+3 8 10
+Pending 8, Current http://www.freebets.org.uk/betting-offers/, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.sportinglife.com/racing/live-shows, Found 8
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.betting-directory.com/bookmaker-special-bets.php, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.marketingweek.com/, Found 0
+--------------------------------------------------
+4 7 10
+Pending 7, Current http://www.freebets.org.uk/tips/, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.sportinglife.com/racing/video-form, Found 8
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.betting-directory.com/free-online-bets.php, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.marketingweek.com/latest/, Found 0
+--------------------------------------------------
+5 6 10
+Pending 6, Current http://www.freebets.org.uk/previews/, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.sportinglife.com/greyhounds/live-shows, Found 9
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.betting-directory.com/betting-news.php, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.marketingweek.com/issues/4-february-2016/, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current https://www.reddit.com/r/dataisbeautiful/, Found 0
+--------------------------------------------------
+6 5 10
+Pending 5, Current http://www.freebets.org.uk/sports/, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.sportinglife.com/greyhounds/news/article/25018/10158821/greyhound-racing-race-by-race-tips-for-uk-dogs-meetings, Found 9
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.betting-directory.com/football/celebrity-football-tips.php, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.marketingweek.com/2015/12/14/events/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"https://www.reddit.com":{"targets":[]},"https://www.reddit.com/r/announcements/":{"targets":[]},"https://www.reddit.com/r/art/":{"targets":[]},"https://www.reddit.com/r/askreddit/":{"targets":[]},"https://www.reddit.com/r/askscience/":{"targets":[]},"https://www.reddit.com/r/aww/":{"targets":[]},"https://www.reddit.com/r/blog/":{"targets":[]},"https://www.reddit.com/r/books/":{"targets":[]},"https://www.reddit.com/r/creepy/":{"targets":[]},"https://www.reddit.com/r/dataisbeautiful/":{"targets":[]}}
+Delete called for  5
+Deleted 5 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.free-bet-advice.com, Found 0
+--------------------------------------------------
+7 4 10
+Pending 4, Current http://www.freebets.org.uk/media/, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.sportinglife.com/greyhounds/racecards, Found 9
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.betting-directory.com/american-football, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.marketingweek.com/back-issues/, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.free-bet-advice.com/, Found 0
+--------------------------------------------------
+8 3 10
+Pending 3, Current http://www.freebets.org.uk/guides/, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.sportinglife.com/greyhounds/fast-results, Found 9
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.betting-directory.com/boxing, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.marketingweek.com/sectors/agencies/, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.sportinglife.com/racing/news/article/465/10160522/jockey-darren-egan-banned-for-12-years-following-corruption-probe, Found 16
+--------------------------------------------------
+9 2 10
+Pending 2, Current http://www.freebets.org.uk/blog/, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.betting-directory.com/cricket, Found 0
+--------------------------------------------------
+3 8 10
+Pending 8, Current http://www.free-bet-advice.com/category/free-bets, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.marketingweek.com/sectors/automotives/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.sportinglife.com":{"targets":[{"href":"http://www.skybet.com/skybet?offer=113&aff=726&sba_promo=50MATCHED&dcmp=sl_hp_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/8?aff=726&dcmp=sl_hp_nav","anchor":"Racing"},{"href":"http://www.skybet.com/go/class/5?aff=726&dcmp=sl_hp_nav","anchor":"Football"},{"href":"http://www.skybet.com/go/event/18898371?aff=726&dcmp=sl_hp_nav","anchor":"WHU v Liverpool"},{"href":"http://www.skybet.com/go/class/5/type/25?aff=726&dcmp=sl_hp_nav","anchor":"FA Cup"},{"href":"http://www.skybet.com/go/class/30?aff=726&dcmp=sl_hp_nav","anchor":"SA v Eng"},{"href":"http://www.skybet.com/go/class/31?aff=726&dcmp=sl_hp_nav","anchor":"Six Nations"},{"href":"http://www.skybet.com/go/class/33?aff=726&dcmp=sl_hp_nav","anchor":"Darts"},{"href":"http://www.skybet.com/go/class/8?aff=681&dcmp=sl_hr_betlink","anchor":"Click here to bet NOW!"},{"href":"http://www.skybet.com/go/class/23?aff=9538&dcmp=sl_gh_betlink","anchor":"Best odds guaranteed"},{"href":"http://www.skybet.com/go/class/5/type/1?aff=682&dcmp=sl_fb_betlink","anchor":"Premier League odds"},{"href":"http://www.skybet.com/skybet?offer=113&aff=681&sba_promo=50MATCHED&dcmp=sl_hr_betlink","anchor":"Free &pound;50 matched bet "},{"href":"http://www.skybet.com/go/event/18897871?aff=681&dcmp=sl_hr_betlink","anchor":"Bet"},{"href":"http://www.skybet.com/go/event/18874286?aff=9318&dcmp=sl_fb_betlink","anchor":"Bet"},{"href":"http://www.skybet.com/go/class/35?aff=9543&dcmp=sl_ts_betlink ","anchor":"Odds"},{"href":"http://www.skybet.com/skybet?offer=113&aff=9543&sba_promo=50MATCHED&dcmp=sl_ts_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/go/class/27?aff=9546&dcmp=sl_NFL_betlink","anchor":"Odds"},{"href":"http://www.skybet.com/go/class/31/type/10007850?aff=9539&dcmp=sl_ru_betlink_SIXNATIONSSEO","anchor":"Odds"},{"href":"http://www.skybet.com/skybet?offer=113&aff=9539&sba_promo=50MATCHED&dcmp=sl_ru_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/go/event/18379037?aff=10988&dcmp=sl_hr_betlink","anchor":"Festival Odds"},{"href":"http://www.skybet.com/go/class/5/type/10003041?aff=682&dcmp=sl_fb_betlink","anchor":"Latest Odds"},{"href":"http://www.skybet.com/go/class/10000057/type/10010640?aff=10392","anchor":"Sky Bet 2016 specials"},{"href":"http://www.skybet.com/skybet?offer=113&aff=683&sba_promo=50MATCHED&dcmp=sl_gl_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/skybet?offer=153&aff=683&dcmp=sl_gl_betlink ","anchor":"Odds"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/":{"targets":[{"href":"http://www.skybet.com/skybet?offer=113&aff=726&sba_promo=50MATCHED&dcmp=sl_hp_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/8?aff=726&dcmp=sl_hp_nav","anchor":"Racing"},{"href":"http://www.skybet.com/go/class/5?aff=726&dcmp=sl_hp_nav","anchor":"Football"},{"href":"http://www.skybet.com/go/event/18898371?aff=726&dcmp=sl_hp_nav","anchor":"WHU v Liverpool"},{"href":"http://www.skybet.com/go/class/5/type/25?aff=726&dcmp=sl_hp_nav","anchor":"FA Cup"},{"href":"http://www.skybet.com/go/class/30?aff=726&dcmp=sl_hp_nav","anchor":"SA v Eng"},{"href":"http://www.skybet.com/go/class/31?aff=726&dcmp=sl_hp_nav","anchor":"Six Nations"},{"href":"http://www.skybet.com/go/class/33?aff=726&dcmp=sl_hp_nav","anchor":"Darts"},{"href":"http://www.skybet.com/go/class/8?aff=681&dcmp=sl_hr_betlink","anchor":"Click here to bet NOW!"},{"href":"http://www.skybet.com/go/class/23?aff=9538&dcmp=sl_gh_betlink","anchor":"Best odds guaranteed"},{"href":"http://www.skybet.com/go/class/5/type/1?aff=682&dcmp=sl_fb_betlink","anchor":"Premier League odds"},{"href":"http://www.skybet.com/skybet?offer=113&aff=681&sba_promo=50MATCHED&dcmp=sl_hr_betlink","anchor":"Free &pound;50 matched bet "},{"href":"http://www.skybet.com/go/event/18897871?aff=681&dcmp=sl_hr_betlink","anchor":"Bet"},{"href":"http://www.skybet.com/go/event/18874286?aff=9318&dcmp=sl_fb_betlink","anchor":"Bet"},{"href":"http://www.skybet.com/go/class/35?aff=9543&dcmp=sl_ts_betlink ","anchor":"Odds"},{"href":"http://www.skybet.com/skybet?offer=113&aff=9543&sba_promo=50MATCHED&dcmp=sl_ts_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/go/class/27?aff=9546&dcmp=sl_NFL_betlink","anchor":"Odds"},{"href":"http://www.skybet.com/go/class/31/type/10007850?aff=9539&dcmp=sl_ru_betlink_SIXNATIONSSEO","anchor":"Odds"},{"href":"http://www.skybet.com/skybet?offer=113&aff=9539&sba_promo=50MATCHED&dcmp=sl_ru_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/go/event/18379037?aff=10988&dcmp=sl_hr_betlink","anchor":"Festival Odds"},{"href":"http://www.skybet.com/go/class/5/type/10003041?aff=682&dcmp=sl_fb_betlink","anchor":"Latest Odds"},{"href":"http://www.skybet.com/go/class/10000057/type/10010640?aff=10392","anchor":"Sky Bet 2016 specials"},{"href":"http://www.skybet.com/skybet?offer=113&aff=683&sba_promo=50MATCHED&dcmp=sl_gl_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/skybet?offer=153&aff=683&dcmp=sl_gl_betlink ","anchor":"Odds"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/racing/fast-results":{"targets":[{"href":"http://www.skybet.com/go/class/8?aff=687&dcmp=sl_hr_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=687&sba_promo=50MATCHED&dcmp=sl_hr_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=687&dcmp=sl_hr_nav","anchor":"Chelt Fest"},{"href":"http://www.skybet.com/go/class/8/type/141?aff=687&dcmp=sl_hr_nav","anchor":"Musselburgh"},{"href":"http://www.skybet.com/go/class/8/type/118?aff_id=687&dcmp=sl_hr_nav","anchor":"Fakenham"},{"href":"http://www.skybet.com/horse-racing?aff=681=sl_hr_betlink","anchor":"Latest Odds"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/racing/live-shows":{"targets":[{"href":"http://www.skybet.com/go/class/8?aff=687&dcmp=sl_hr_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=687&sba_promo=50MATCHED&dcmp=sl_hr_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=687&dcmp=sl_hr_nav","anchor":"Chelt Fest"},{"href":"http://www.skybet.com/go/class/8/type/141?aff=687&dcmp=sl_hr_nav","anchor":"Musselburgh"},{"href":"http://www.skybet.com/go/class/8/type/118?aff_id=687&dcmp=sl_hr_nav","anchor":"Fakenham"},{"href":"http://www.skybet.com/horse-racing?aff=681=sl_hr_betlink","anchor":"Latest Odds"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/racing/video-form":{"targets":[{"href":"http://www.skybet.com/go/class/8?aff=687&dcmp=sl_hr_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=687&sba_promo=50MATCHED&dcmp=sl_hr_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=687&dcmp=sl_hr_nav","anchor":"Chelt Fest"},{"href":"http://www.skybet.com/go/class/8/type/141?aff=687&dcmp=sl_hr_nav","anchor":"Musselburgh"},{"href":"http://www.skybet.com/go/class/8/type/118?aff_id=687&dcmp=sl_hr_nav","anchor":"Fakenham"},{"href":"http://www.skybet.com/horse-racing?aff=681=sl_hr_betlink","anchor":"Latest Odds"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/greyhounds/live-shows":{"targets":[{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=689&sba_promo=50MATCHED&dcmp=sl_gh_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Today's Meetings"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Daily Trap Challenge"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Ante-Post"},{"href":"http://www.skybet.com/go/class/8?aff=689&dcmp=sl_gh_nav","anchor":"Horse Racing"},{"href":"http://www.skybet.com/go/class/5?aff=689&dcmp=sl_gh_nav","anchor":"Football"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/greyhounds/news/article/25018/10158821/greyhound-racing-race-by-race-tips-for-uk-dogs-meetings":{"targets":[{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=689&sba_promo=50MATCHED&dcmp=sl_gh_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Today's Meetings"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Daily Trap Challenge"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Ante-Post"},{"href":"http://www.skybet.com/go/class/8?aff=689&dcmp=sl_gh_nav","anchor":"Horse Racing"},{"href":"http://www.skybet.com/go/class/5?aff=689&dcmp=sl_gh_nav","anchor":"Football"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/greyhounds/racecards":{"targets":[{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=689&sba_promo=50MATCHED&dcmp=sl_gh_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Today's Meetings"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Daily Trap Challenge"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Ante-Post"},{"href":"http://www.skybet.com/go/class/8?aff=689&dcmp=sl_gh_nav","anchor":"Horse Racing"},{"href":"http://www.skybet.com/go/class/5?aff=689&dcmp=sl_gh_nav","anchor":"Football"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/greyhounds/fast-results":{"targets":[{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=689&sba_promo=50MATCHED&dcmp=sl_gh_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Today's Meetings"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Daily Trap Challenge"},{"href":"http://www.skybet.com/go/class/23?aff=689&dcmp=sl_gh_nav","anchor":"Ante-Post"},{"href":"http://www.skybet.com/go/class/8?aff=689&dcmp=sl_gh_nav","anchor":"Horse Racing"},{"href":"http://www.skybet.com/go/class/5?aff=689&dcmp=sl_gh_nav","anchor":"Football"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]},"http://www.sportinglife.com/racing/news/article/465/10160522/jockey-darren-egan-banned-for-12-years-following-corruption-probe":{"targets":[{"href":"http://www.skybet.com/go/class/8?aff=687&dcmp=sl_hr_nav","anchor":"Next Race"},{"href":"http://www.skybet.com/skybet?offer=113&aff=687&sba_promo=50MATCHED&dcmp=sl_hr_nav","anchor":"£50 Free Bet!"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=687&dcmp=sl_hr_nav","anchor":"Chelt Fest"},{"href":"http://www.skybet.com/go/class/8/type/141?aff=687&dcmp=sl_hr_nav","anchor":"Musselburgh"},{"href":"http://www.skybet.com/go/class/8/type/118?aff_id=687&dcmp=sl_hr_nav","anchor":"Fakenham"},{"href":"http://www.skybet.com/skybet?offer=113&aff=681&sba_promo=50MATCHED&dcmp=sl_hr_betlink","anchor":"Free &pound;50 matched bet "},{"href":"http://www.skybet.com/go/class/8?aff=681&dcmp=sl_hr_betlink","anchor":"Horse Racing odds"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=681&dcmp=sl_hr_betlink ","anchor":"Bet now at the Festival"},{"href":"http://www.skybet.com/skybet?offer=113&aff=681&sba_promo=50MATCHED&dcmp=sl_hr_betlink","anchor":"Free Bet"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=681&dcmp=sl_hr_betlink","anchor":"NRNB"},{"href":"http://www.skybet.com/horse-racing?aff=681&dcmp=sl_hr_betlink","anchor":"Horse Racing Betting"},{"href":"http://www.skybet.com/go/class/8/type/216?aff=681&dcmp=sl_hr_betlink ","anchor":"Bet now at Cheltenham"},{"href":"http://www.skybet.com/go/event/18379037?aff=10988&dcmp=sl_hr_betlink","anchor":"Festival Odds"},{"href":"http://www.skybet.com/horse-racing?aff=681=sl_hr_betlink","anchor":"Latest Odds"},{"href":"http://www.skybet.com","anchor":"Sky Bet"},{"href":"https://www.skybet.com/virtual-football","anchor":"Virtual Football"}]}}
+Delete called for  7
+Deleted 7 [ 'DELETED' ]
+10 1 10
+Pending 1, Current http://www.freebets.org.uk/out/6516, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.betting-directory.com/cycling, Found 0
+--------------------------------------------------
+1 0 10
+Pending 10, Current http://www.online-betting.me.uk, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.marketingweek.com/sectors/b2b/, Found 0
+--------------------------------------------------
+11 0 10
+Pending 0, Current http://www.freebets.org.uk/out/5517, Found 0
+--------------------------------------------------
+4 7 10
+Pending 7, Current http://www.free-bet-advice.com/category/free-bets/all-free-bets, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.betting-directory.com":{"targets":[]},"http://www.betting-directory.com/":{"targets":[]},"http://www.betting-directory.com/bookmaker-special-bets.php":{"targets":[]},"http://www.betting-directory.com/free-online-bets.php":{"targets":[]},"http://www.betting-directory.com/betting-news.php":{"targets":[]},"http://www.betting-directory.com/football/celebrity-football-tips.php":{"targets":[]},"http://www.betting-directory.com/american-football":{"targets":[]},"http://www.betting-directory.com/boxing":{"targets":[]},"http://www.betting-directory.com/cricket":{"targets":[]},"http://www.betting-directory.com/cycling":{"targets":[]}}
+Delete called for  9
+Deleted 9 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.cheltenham-festival.co.uk, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.online-betting.me.uk/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.freebets.org.uk":{"targets":[]},"http://www.freebets.org.uk/":{"targets":[]},"http://www.freebets.org.uk/betting-offers/":{"targets":[]},"http://www.freebets.org.uk/tips/":{"targets":[]},"http://www.freebets.org.uk/previews/":{"targets":[]},"http://www.freebets.org.uk/sports/":{"targets":[]},"http://www.freebets.org.uk/media/":{"targets":[]},"http://www.freebets.org.uk/guides/":{"targets":[]},"http://www.freebets.org.uk/blog/":{"targets":[]},"http://www.freebets.org.uk/out/6516":{"targets":[]},"http://www.freebets.org.uk/out/5517":{"targets":[]}}
+Delete called for  8
+Deleted 8 [ 'DELETED' ]
+10 0 10
+Pending 0, Current http://www.marketingweek.com/sectors/charities-not-for-profit/, Found 0
+--------------------------------------------------
+1 0 10
+Pending 10, Current http://www.themillers.co.uk, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.cheltenham-festival.co.uk/, Found 0
+--------------------------------------------------
+3 8 10
+Pending 8, Current http://www.online-betting.me.uk/bookmakers.html, Found 0
+--------------------------------------------------
+5 6 10
+Pending 6, Current http://www.free-bet-advice.com/category/free-bets/popular-free-bets, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.marketingweek.com":{"targets":[]},"http://www.marketingweek.com/":{"targets":[]},"http://www.marketingweek.com/latest/":{"targets":[]},"http://www.marketingweek.com/issues/4-february-2016/":{"targets":[]},"http://www.marketingweek.com/2015/12/14/events/":{"targets":[]},"http://www.marketingweek.com/back-issues/":{"targets":[]},"http://www.marketingweek.com/sectors/agencies/":{"targets":[]},"http://www.marketingweek.com/sectors/automotives/":{"targets":[]},"http://www.marketingweek.com/sectors/b2b/":{"targets":[]},"http://www.marketingweek.com/sectors/charities-not-for-profit/":{"targets":[]}}
+Delete called for  10
+Deleted 10 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.oddschecker.com, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.themillers.co.uk/news/subscribe/newslettersubscription.aspx, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.cheltenham-festival.co.uk/cheltenham-free-bets.php, Found 0
+--------------------------------------------------
+4 7 10
+Pending 7, Current http://www.online-betting.me.uk/betting-bonus.html, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.themillers.co.uk/, Found 0
+--------------------------------------------------
+6 5 10
+Pending 5, Current http://www.free-bet-advice.com/category/free-bets/bookmakers-to-avoid, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.cheltenham-festival.co.uk/cheltenham-odds.php, Found 0
+--------------------------------------------------
+5 6 10
+Pending 6, Current http://www.online-betting.me.uk/blog/, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.oddschecker.com/, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.themillers.co.uk/news/, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.cheltenham-festival.co.uk/latest-offers.php, Found 0
+--------------------------------------------------
+6 5 10
+Pending 5, Current http://www.online-betting.me.uk/betting-tips/, Found 0
+--------------------------------------------------
+7 4 10
+Pending 4, Current http://www.free-bet-advice.com/category/casino-free-bets, Found 0
+--------------------------------------------------
+3 8 10
+Pending 8, Current http://www.oddschecker.com/free-bets, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.themillers.co.uk/news/premium-video/, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.cheltenham-festival.co.uk/cheltenham-festival-tips.php, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.online-betting.me.uk/betting-strategies.html, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.themillers.co.uk/news/league/, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.cheltenham-festival.co.uk/cheltenham-races.php, Found 0
+--------------------------------------------------
+4 7 10
+Pending 7, Current http://www.oddschecker.com/casino-bonuses, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.online-betting.me.uk/betting-exchanges.html, Found 0
+--------------------------------------------------
+8 3 10
+Pending 3, Current http://www.free-bet-advice.com/category/betting-help-advice-articles, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.cheltenham-festival.co.uk/cheltenham-festival-form.php, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.themillers.co.uk/news/post-match-news/, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.online-betting.me.uk/betting-a-to-z.html, Found 0
+--------------------------------------------------
+5 6 10
+Pending 6, Current http://www.oddschecker.com/tips, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.cheltenham-festival.co.uk/cheltenham-festival-results.php, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.online-betting.me.uk/sports-betting-guide/, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.themillers.co.uk/tickets/, Found 0
+--------------------------------------------------
+6 5 10
+Pending 5, Current https://www.oddschecker.com/myoddschecker/register, Found 0
+--------------------------------------------------
+9 2 10
+Pending 2, Current http://www.free-bet-advice.com/category/betting-news, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.cheltenham-festival.co.uk/2016-01-20/cheltenham-specialist-poli-can-be-the-don-in-gold-cup.php, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.online-betting.me.uk":{"targets":[]},"http://www.online-betting.me.uk/":{"targets":[]},"http://www.online-betting.me.uk/bookmakers.html":{"targets":[]},"http://www.online-betting.me.uk/betting-bonus.html":{"targets":[]},"http://www.online-betting.me.uk/blog/":{"targets":[]},"http://www.online-betting.me.uk/betting-tips/":{"targets":[]},"http://www.online-betting.me.uk/betting-strategies.html":{"targets":[]},"http://www.online-betting.me.uk/betting-exchanges.html":{"targets":[]},"http://www.online-betting.me.uk/betting-a-to-z.html":{"targets":[]},"http://www.online-betting.me.uk/sports-betting-guide/":{"targets":[]}}
+Delete called for  12
+Deleted 12 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.yorkshirepost.co.uk, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.themillers.co.uk/club/business-finder/, Found 0
+--------------------------------------------------
+7 4 10
+Pending 4, Current https://www.oddschecker.com/myoddschecker/login, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.cheltenham-festival.co.uk":{"targets":[]},"http://www.cheltenham-festival.co.uk/":{"targets":[]},"http://www.cheltenham-festival.co.uk/cheltenham-free-bets.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/cheltenham-odds.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/latest-offers.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/cheltenham-festival-tips.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/cheltenham-races.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/cheltenham-festival-form.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/cheltenham-festival-results.php":{"targets":[]},"http://www.cheltenham-festival.co.uk/2016-01-20/cheltenham-specialist-poli-can-be-the-don-in-gold-cup.php":{"targets":[]}}
+Delete called for  13
+Deleted 13 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.football365.com, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.yorkshirepost.co.uk/motors, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.themillers.co.uk/fixtures-results/, Found 0
+--------------------------------------------------
+8 3 10
+Pending 3, Current https://www.oddschecker.com/myoddschecker/forgot-password, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.football365.com/, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.yorkshirepost.co.uk/property, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.themillers.co.uk":{"targets":[]},"http://www.themillers.co.uk/news/subscribe/newslettersubscription.aspx":{"targets":[]},"http://www.themillers.co.uk/":{"targets":[]},"http://www.themillers.co.uk/news/":{"targets":[]},"http://www.themillers.co.uk/news/premium-video/":{"targets":[]},"http://www.themillers.co.uk/news/league/":{"targets":[]},"http://www.themillers.co.uk/news/post-match-news/":{"targets":[]},"http://www.themillers.co.uk/tickets/":{"targets":[]},"http://www.themillers.co.uk/club/business-finder/":{"targets":[]},"http://www.themillers.co.uk/fixtures-results/":{"targets":[]}}
+Delete called for  14
+Deleted 14 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.wosb.com, Found 0
+--------------------------------------------------
+9 2 10
+Pending 2, Current https://www.oddschecker.com/myoddschecker/my-profile, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.football365.com/all-the-news, Found 0
+--------------------------------------------------
+10 1 10
+Pending 1, Current http://www.free-bet-advice.com/category/betting-systems, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.yorkshirepost.co.uk/findit, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.wosb.com/, Found 0
+--------------------------------------------------
+10 1 10
+Pending 1, Current https://www.oddschecker.com/myoddschecker/bookmakers, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.football365.com/arsenal, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.yorkshirepost.co.uk/profile, Found 0
+--------------------------------------------------
+3 8 10
+Pending 8, Current http://www.wosb.com/bookmaker-rating.php, Found 0
+--------------------------------------------------
+11 0 10
+Pending 0, Current https://www.oddschecker.com/myoddschecker/bookmarks, Found 0
+--------------------------------------------------
+11 0 10
+Pending 0, Current http://www.free-bet-advice.com/category/betting-systems/recommended-betting-systems, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.football365.com/aston-villa, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.yorkshirepost.co.uk/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.oddschecker.com":{"targets":[]},"http://www.oddschecker.com/":{"targets":[]},"http://www.oddschecker.com/free-bets":{"targets":[]},"http://www.oddschecker.com/casino-bonuses":{"targets":[]},"http://www.oddschecker.com/tips":{"targets":[]},"https://www.oddschecker.com/myoddschecker/register":{"targets":[]},"https://www.oddschecker.com/myoddschecker/login":{"targets":[]},"https://www.oddschecker.com/myoddschecker/forgot-password":{"targets":[]},"https://www.oddschecker.com/myoddschecker/my-profile":{"targets":[]},"https://www.oddschecker.com/myoddschecker/bookmakers":{"targets":[]},"https://www.oddschecker.com/myoddschecker/bookmarks":{"targets":[]}}
+Delete called for  15
+Deleted 15 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.betrescue.com, Found 0
+--------------------------------------------------
+4 7 10
+Pending 7, Current http://www.wosb.com/bookmaker-bonus.php, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.free-bet-advice.com":{"targets":[]},"http://www.free-bet-advice.com/":{"targets":[]},"http://www.free-bet-advice.com/category/free-bets":{"targets":[]},"http://www.free-bet-advice.com/category/free-bets/all-free-bets":{"targets":[]},"http://www.free-bet-advice.com/category/free-bets/popular-free-bets":{"targets":[]},"http://www.free-bet-advice.com/category/free-bets/bookmakers-to-avoid":{"targets":[]},"http://www.free-bet-advice.com/category/casino-free-bets":{"targets":[]},"http://www.free-bet-advice.com/category/betting-help-advice-articles":{"targets":[]},"http://www.free-bet-advice.com/category/betting-news":{"targets":[]},"http://www.free-bet-advice.com/category/betting-systems":{"targets":[]},"http://www.free-bet-advice.com/category/betting-systems/recommended-betting-systems":{"targets":[]}}
+Delete called for  11
+Deleted 11 [ 'DELETED' ]
+1 0 10
+Pending 10, Current http://www.football-data.co.uk, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.yorkshirepost.co.uk/news/, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.football365.com/bournemouth, Found 0
+--------------------------------------------------
+5 6 10
+Pending 6, Current http://www.wosb.com/betting-tips, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current http://www.betrescue.com/, Found 0
+--------------------------------------------------
+2 9 10
+Pending 9, Current http://www.football-data.co.uk/, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.yorkshirepost.co.uk/sport/, Found 0
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.football365.com/chelsea, Found 0
+--------------------------------------------------
+6 5 10
+Pending 5, Current http://www.wosb.com/odds-comparison, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.betrescue.com/free-bets-offers, Found 0
+--------------------------------------------------
+3 7 10
+Pending 7, Current http://www.football-data.co.uk/disclaimer.php, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.yorkshirepost.co.uk/business/, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.football365.com/crystal-palace, Found 0
+--------------------------------------------------
+7 4 10
+Pending 4, Current http://www.wosb.com/live-streaming, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.betrescue.com/betting-news/, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current http://www.football-data.co.uk/profitable_betting_system.php, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.yorkshirepost.co.uk/lifestyle/, Found 0
+--------------------------------------------------
+8 3 10
+Pending 3, Current http://www.wosb.com/betting-forum, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.football365.com/everton, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.football-data.co.uk/surebets.php, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current http://www.betrescue.com/category/golf-betting/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.yorkshirepost.co.uk":{"targets":[]},"http://www.yorkshirepost.co.uk/motors":{"targets":[]},"http://www.yorkshirepost.co.uk/property":{"targets":[]},"http://www.yorkshirepost.co.uk/findit":{"targets":[]},"http://www.yorkshirepost.co.uk/profile":{"targets":[]},"http://www.yorkshirepost.co.uk/":{"targets":[]},"http://www.yorkshirepost.co.uk/news/":{"targets":[]},"http://www.yorkshirepost.co.uk/sport/":{"targets":[]},"http://www.yorkshirepost.co.uk/business/":{"targets":[]},"http://www.yorkshirepost.co.uk/lifestyle/":{"targets":[]}}
+Delete called for  16
+Deleted 16 [ 'DELETED' ]
+1 0 10
+Pending 10, Current https://apps.facebook.com, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.wosb.com/popup_bookmaker_rating.php?surl=triobet, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.football-data.co.uk/freebetsdaily/index.php, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.football365.com/leicester-city, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current http://www.betrescue.com/category/tennis-betting/, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.wosb.com/popup_bookmaker_bonus_terms_and_conditions.php?surl=triobet, Found 0
+--------------------------------------------------
+2 8 10
+Pending 8, Current https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=laqfq0je6&s=1, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.football365.com":{"targets":[]},"http://www.football365.com/":{"targets":[]},"http://www.football365.com/all-the-news":{"targets":[]},"http://www.football365.com/arsenal":{"targets":[]},"http://www.football365.com/aston-villa":{"targets":[]},"http://www.football365.com/bournemouth":{"targets":[]},"http://www.football365.com/chelsea":{"targets":[]},"http://www.football365.com/crystal-palace":{"targets":[]},"http://www.football365.com/everton":{"targets":[]},"http://www.football365.com/leicester-city":{"targets":[]}}
+Delete called for  17
+Deleted 17 [ 'DELETED' ]
+7 3 10
+Pending 3, Current http://www.football-data.co.uk/bet365_promotions.php, Found 0
+--------------------------------------------------
+1 0 1
+Pending 0, Current https://mib37:December 1820!@tools.skybet.net/confluence/dosearchsite.action?queryString=banners, Found 22
+--------------------------------------------------
+7 3 10
+Pending 3, Current http://www.betrescue.com/category/cricket-betting/, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.wosb.com":{"targets":[]},"http://www.wosb.com/":{"targets":[]},"http://www.wosb.com/bookmaker-rating.php":{"targets":[]},"http://www.wosb.com/bookmaker-bonus.php":{"targets":[]},"http://www.wosb.com/betting-tips":{"targets":[]},"http://www.wosb.com/odds-comparison":{"targets":[]},"http://www.wosb.com/live-streaming":{"targets":[]},"http://www.wosb.com/betting-forum":{"targets":[]},"http://www.wosb.com/popup_bookmaker_rating.php?surl=triobet":{"targets":[]},"http://www.wosb.com/popup_bookmaker_bonus_terms_and_conditions.php?surl=triobet":{"targets":[]}}
+Delete called for  18
+Deleted 18 [ 'DELETED' ]
+3 7 10
+Pending 7, Current https://apps.facebook.com/recover/initiate?lwv=110, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"https://mib37:December 1820!@tools.skybet.net/confluence/dosearchsite.action?queryString=banners":{"targets":["https://tools.skybet.net/confluence/display/SO/Banners?src=search","https://tools.skybet.net/confluence/display/SO","https://tools.skybet.net/confluence/display/OPS/Bannering+from+Site+B?src=search","https://tools.skybet.net/confluence/display/OPS","https://tools.skybet.net/confluence/display/SO/Create+or+update+banners?src=search","https://tools.skybet.net/confluence/display/SO","https://tools.skybet.net/confluence/display/SO/Bannering+Up+Exercises?src=search","https://tools.skybet.net/confluence/display/SO","https://tools.skybet.net/confluence/display/SO/How+to+apply+banners+to+the+site?src=search","https://tools.skybet.net/confluence/display/SO","https://tools.skybet.net/confluence/display/GAMINGTRIBE/Product+Banners?src=search","https://tools.skybet.net/confluence/display/GAMINGTRIBE","https://tools.skybet.net/confluence/display/myaccount/Bannering?src=search","https://tools.skybet.net/confluence/display/myaccount","https://tools.skybet.net/confluence/download/attachments/15216701/banner-builder-existing-15403091?version=1&modificationDate=1447850234000&api=v2","https://tools.skybet.net/confluence/display/BT","https://tools.skybet.net/confluence/display/BT/Banner+Builder+-+Migration+Plan","https://tools.skybet.net/confluence/download/attachments/15216701/banner-builder-proposed-15403095?version=4&modificationDate=1447850234000&api=v2","https://tools.skybet.net/confluence/display/BT","https://tools.skybet.net/confluence/display/BT/Banner+Builder+-+Migration+Plan","https://tools.skybet.net/confluence/display/BT/Better+Bannering?src=search","https://tools.skybet.net/confluence/display/BT"]}}
+Delete called for  22
+Deleted 22 [ 'DELETED' ]
+8 2 10
+Pending 2, Current http://www.football-data.co.uk/williamhill_promotions.php, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current http://www.betrescue.com/category/darts-betting/, Found 0
+--------------------------------------------------
+4 6 10
+Pending 6, Current https://apps.facebook.com/legal/terms, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.football-data.co.uk/paddypower_promotions.php, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current http://www.betrescue.com/category/rugby-league-betting/, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current http://www.football-data.co.uk/bet365_promotions_deposit_bonus.php, Found 0
+--------------------------------------------------
+5 5 10
+Pending 5, Current https://apps.facebook.com/about/privacy, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.football-data.co.uk":{"targets":[]},"http://www.football-data.co.uk/":{"targets":[]},"http://www.football-data.co.uk/disclaimer.php":{"targets":[]},"http://www.football-data.co.uk/profitable_betting_system.php":{"targets":[]},"http://www.football-data.co.uk/surebets.php":{"targets":[]},"http://www.football-data.co.uk/freebetsdaily/index.php":{"targets":[]},"http://www.football-data.co.uk/bet365_promotions.php":{"targets":[]},"http://www.football-data.co.uk/williamhill_promotions.php":{"targets":[]},"http://www.football-data.co.uk/paddypower_promotions.php":{"targets":[]},"http://www.football-data.co.uk/bet365_promotions_deposit_bonus.php":{"targets":[]}}
+Delete called for  20
+Deleted 20 [ 'DELETED' ]
+10 0 10
+Pending 0, Current http://www.betrescue.com/category/rugby-union-betting/, Found 0
+--------------------------------------------------
+6 4 10
+Pending 4, Current https://apps.facebook.com/help/cookies, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"http://www.betrescue.com":{"targets":[]},"http://www.betrescue.com/":{"targets":[]},"http://www.betrescue.com/free-bets-offers":{"targets":[]},"http://www.betrescue.com/betting-news/":{"targets":[]},"http://www.betrescue.com/category/golf-betting/":{"targets":[]},"http://www.betrescue.com/category/tennis-betting/":{"targets":[]},"http://www.betrescue.com/category/cricket-betting/":{"targets":[]},"http://www.betrescue.com/category/darts-betting/":{"targets":[]},"http://www.betrescue.com/category/rugby-league-betting/":{"targets":[]},"http://www.betrescue.com/category/rugby-union-betting/":{"targets":[]}}
+Delete called for  19
+Deleted 19 [ 'DELETED' ]
+7 3 10
+Pending 3, Current https://apps.facebook.com/pages/create/?ref_type=registration_form, Found 0
+--------------------------------------------------
+8 2 10
+Pending 2, Current https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=9aqfhx7kc&s=1, Found 0
+--------------------------------------------------
+9 1 10
+Pending 1, Current https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=daqh_du8m&s=1, Found 0
+--------------------------------------------------
+10 0 10
+Pending 0, Current https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=xaqheerq2&s=1, Found 0
+--------------------------------------------------
+all items have been processed
+Found {"https://apps.facebook.com":{"targets":[]},"https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=laqfq0je6&s=1":{"targets":[]},"https://apps.facebook.com/recover/initiate?lwv=110":{"targets":[]},"https://apps.facebook.com/legal/terms":{"targets":[]},"https://apps.facebook.com/about/privacy":{"targets":[]},"https://apps.facebook.com/help/cookies":{"targets":[]},"https://apps.facebook.com/pages/create/?ref_type=registration_form":{"targets":[]},"https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=9aqfhx7kc&s=1":{"targets":[]},"https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=daqh_du8m&s=1":{"targets":[]},"https://apps.facebook.com/l.php?u=https%3a%2f%2fapps.facebook.com%2f&h=xaqheerq2&s=1":{"targets":[]}}
+Delete called for  21
+Deleted 21 [ 'DELETED' ]
+Job Queue now empty, ....

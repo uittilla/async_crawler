@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+/* jslint -W033 */
 "use strict";
 
 var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue, backlinks, confluence;
@@ -14,7 +14,10 @@ backlinks  = new Backlinks();
 confluence = new Confluence();
 
 /**
- * Queue ready
+ * [on description]
+ * @param  {[type]} 'jobReady' [description]
+ * @param  {[type]} function   job(job       [description]
+ * @return {[type]}            [description]
  */
 jobQueue.on('jobReady', function job(job) {
     var data    = JSON.parse(job.data), worker, crawler, queue;
@@ -35,7 +38,10 @@ jobQueue.on('jobReady', function job(job) {
 });
 
 /**
- * Job removed
+ * [on description]
+ * @param  {[type]} 'jobDeleted' [description]
+ * @param  {[type]} function     (id,          msg, crawler [description]
+ * @return {[type]}              [description]
  */
 jobQueue.on('jobDeleted', function (id, msg, crawler) {
     console.log("Deleted", id, msg);
