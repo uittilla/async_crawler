@@ -1,18 +1,16 @@
 #!/usr/bin/env node
+
 /* jslint -W033 */
 "use strict";
 
-var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue, backlinks, confluence;
+var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue;
 
-Queue      = require('./lib/queue');
-Crawler    = require('./lib/crawler');
-Backlinks  = require('./lib/backlinks');
+Queue = require('./lib/queue');
+Crawler = require('./lib/crawler');
+Backlinks = require('./lib/backlinks');
 Confluence = require('./lib/confluence');
 
-jobQueue   = new Queue("default");
-backlinks  = new Backlinks();
-confluence = new Confluence();
-
+jobQueue = new Queue("default");
 /**
  * [on description]
  * @param  {[type]} 'jobReady' [description]
@@ -20,20 +18,17 @@ confluence = new Confluence();
  * @return {[type]}            [description]
  */
 jobQueue.on('jobReady', function job(job) {
-    var data    = JSON.parse(job.data), worker, crawler, queue;
+    var data = JSON.parse(job.data),
+        worker, crawler, queue;
     // build your worker here and pass it in
-    worker  = data.worker == "backlinks" ? backlinks : confluence;
+    worker = data.worker == "backlinks" ? new Backlinks() : new Confluence();
     crawler = new Crawler(data, worker, data.max_links);
-    queue   = crawler.makeQueue();
-
-    queue.push(data.link);
+    queue = crawler.makeQueue(data.link);
 
     queue.drain = function() {
-        console.log('all items have been processed');
-        console.log("Found %j",crawler.getStore());
-
+        console.log('all items have been processed\n Found %j', crawler.getStore());
         jobQueue.deleteJob(job.id, crawler);
-        crawler=null;
+        crawler = null;
     }
 });
 
@@ -43,15 +38,13 @@ jobQueue.on('jobReady', function job(job) {
  * @param  {[type]} function     (id,          msg, crawler [description]
  * @return {[type]}              [description]
  */
-jobQueue.on('jobDeleted', function (id, msg, crawler) {
+jobQueue.on('jobDeleted', function(id, msg, crawler) {
     console.log("Deleted", id, msg);
 
-    jobQueue.statsTube(function (data) {
-        if(data['current-jobs-ready'] > 0 ) {
+    jobQueue.statsTube(function(data) {
+        if (data['current-jobs-ready'] > 0) {
             jobQueue.getJob();
-        }
-        else if(data['current-jobs-reserved'] > 0) { }
-        else {
+        } else if (data['current-jobs-reserved'] > 0) {} else {
             jobQueue.emit('noJob');
         }
     });
@@ -60,12 +53,18 @@ jobQueue.on('jobDeleted', function (id, msg, crawler) {
 /**
  * Job removed
  */
-jobQueue.on('noJob', function () {
+jobQueue.on('noJob', function() {
     console.log("Job Queue now empty, ....");
     process.exit();
 });
 
 var jobs = 5;
-while(jobs--) {
+
+var int = setInterval(function() {
+    console.log("Starting %d", jobs)
     jobQueue.getJob();
-}
+    jobs--;
+    if (jobs === 0) {
+        clearInterval(int);
+    }
+}, 2000);

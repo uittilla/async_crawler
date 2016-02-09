@@ -1,6 +1,6 @@
 {
     "max_links": 100,
-    "rate": 3000,
+    "rate": 5000,
     "beanstalk_host": "localhost",
     "selectors": {
         "confluence_search_links": ".search-results a"
