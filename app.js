@@ -3,7 +3,7 @@
 /* jslint -W033 */
 "use strict";
 
-var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue;
+var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue; 
 
 Queue = require('./lib/queue');
 Crawler = require('./lib/crawler');
