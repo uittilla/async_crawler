@@ -3,7 +3,7 @@
 /* jslint -W033 */
 "use strict";
 
-var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue; 
+var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue;
 
 Queue = require('./lib/queue');
 Crawler = require('./lib/crawler');
@@ -22,7 +22,14 @@ jobQueue.on('jobReady', function job(job) {
         worker, crawler, queue;
     // build your worker here and pass it in
     worker = data.worker == "backlinks" ? new Backlinks() : new Confluence();
-    crawler = new Crawler(data, worker, data.max_links).makeQueue(data.link, jobQueue, crawler, job);
+    crawler = new Crawler(data, worker, data.max_links);
+
+    queue = crawler.makeQueue(data.link, job);
+
+    queue.drain = function() {                                             // Adds our drained
+        console.log('all items processed\nFound %j', crawler.getStore());
+        jobQueue.deleteJob(job.id, crawler);
+    }
 });
 
 /**
