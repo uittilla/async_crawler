@@ -22,14 +22,7 @@ jobQueue.on('jobReady', function job(job) {
         worker, crawler, queue;
     // build your worker here and pass it in
     worker = data.worker == "backlinks" ? new Backlinks() : new Confluence();
-    crawler = new Crawler(data, worker, data.max_links);
-    queue = crawler.makeQueue(data.link);
-
-    queue.drain = function() {
-        console.log('all items have been processed\n Found %j', crawler.getStore());
-        jobQueue.deleteJob(job.id, crawler);
-        crawler = null;
-    }
+    crawler = new Crawler(data, worker, data.max_links).makeQueue(data.link, jobQueue, crawler, job);
 });
 
 /**
@@ -43,8 +36,13 @@ jobQueue.on('jobDeleted', function(id, msg, crawler) {
 
     jobQueue.statsTube(function(data) {
         if (data['current-jobs-ready'] > 0) {
+            // new job
             jobQueue.getJob();
-        } else if (data['current-jobs-reserved'] > 0) {} else {
+        } else if (data['current-jobs-reserved'] > 0) {
+            // do nothing
+        }
+        else {
+            // all done
             jobQueue.emit('noJob');
         }
     });
@@ -64,7 +62,5 @@ var int = setInterval(function() {
     console.log("Starting %d", jobs)
     jobQueue.getJob();
     jobs--;
-    if (jobs === 0) {
-        clearInterval(int);
-    }
+    if (jobs === 0) { clearInterval(int); }
 }, 2000);
