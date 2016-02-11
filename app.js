@@ -42,6 +42,7 @@ jobQueue.on('jobDeleted', function(id, msg, crawler) {
     console.log("Deleted", id, msg);
 
     jobQueue.statsTube(function(data) {
+        console.log();
         if (data['current-jobs-ready'] > 0) {
             // new job
             jobQueue.getJob();
