@@ -32,24 +32,20 @@ jobQueue.on('jobReady', function job(job) {
 
 /**
  * [on description]
- * @param  {[type]} 'jobDeleted' [description]
- * @param  {[type]} function     (id,          msg, crawler [description]
+ * @param  {event} 'jobDeleted' [description]
+ * @param  {[type]} function     (id, msg, crawler [description]
  * @return {[type]}              [description]
  */
 jobQueue.on('jobDeleted', function(id, msg, crawler) {
     util.log("Deleted", id, msg);
 
     jobQueue.statsTube(function(data) {
-        util.log();
-        if (data['current-jobs-ready'] > 0) {
-            // new job
+        if (data['current-jobs-ready'] > 0) {              // still jobs ready
             jobQueue.getJob();
-        } else if (data['current-jobs-reserved'] > 0) {
-            // do nothing
+        } else if (data['current-jobs-reserved'] > 0) {    // still running jobs
         }
         else {
-            // all done
-            jobQueue.emit('noJob');
+            jobQueue.emit('noJob');                        // queue empty
         }
     });
 });
@@ -65,7 +61,7 @@ jobQueue.on('noJob', function() {
 var jobs = 5;
 
 var int = setInterval(function() {
-    util.log("Starting %d", jobs)
+    util.log("Starting %d", jobs);
     jobQueue.getJob();
     jobs--;
     if (jobs === 0) { clearInterval(int); }
