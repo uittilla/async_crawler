@@ -2,12 +2,13 @@
 /* jslint -W033 */
 "use strict";
 
-var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue;
+var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue, util;
 
 Queue      = require('./lib/queue');
 Crawler    = require('./lib/crawler');
 Backlinks  = require('./lib/backlinks');
 Confluence = require('./lib/confluence');
+util       = require('util');
 jobQueue   = new Queue("default");
 /**
  * [on description]
@@ -24,7 +25,7 @@ jobQueue.on('jobReady', function job(job) {
     queue   = crawler.makeQueue(data.link, job);
 
     queue.drain = function() {                                             // Adds our drained
-        console.log('all items processed\nFound %j', crawler.getStore());
+        util.log('all items processed\nFound %j', crawler.getStore());
         jobQueue.deleteJob(job.id, crawler);
     }
 });
@@ -36,10 +37,10 @@ jobQueue.on('jobReady', function job(job) {
  * @return {[type]}              [description]
  */
 jobQueue.on('jobDeleted', function(id, msg, crawler) {
-    console.log("Deleted", id, msg);
+    util.log("Deleted", id, msg);
 
     jobQueue.statsTube(function(data) {
-        console.log();
+        util.log();
         if (data['current-jobs-ready'] > 0) {
             // new job
             jobQueue.getJob();
@@ -57,14 +58,14 @@ jobQueue.on('jobDeleted', function(id, msg, crawler) {
  * Job removed
  */
 jobQueue.on('noJob', function() {
-    console.log("Job Queue now empty, ....");
+    util.log("Job Queue now empty, ....");
     process.exit();
 });
 
 var jobs = 5;
 
 var int = setInterval(function() {
-    console.log("Starting %d", jobs)
+    util.log("Starting %d", jobs)
     jobQueue.getJob();
     jobs--;
     if (jobs === 0) { clearInterval(int); }
