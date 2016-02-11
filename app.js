@@ -1,16 +1,14 @@
 #!/usr/bin/env node
-
 /* jslint -W033 */
 "use strict";
 
 var Queue, Crawler, Backlinks, Confluence, jobQueue, jobQueue;
 
-Queue = require('./lib/queue');
-Crawler = require('./lib/crawler');
-Backlinks = require('./lib/backlinks');
+Queue      = require('./lib/queue');
+Crawler    = require('./lib/crawler');
+Backlinks  = require('./lib/backlinks');
 Confluence = require('./lib/confluence');
-
-jobQueue = new Queue("default");
+jobQueue   = new Queue("default");
 /**
  * [on description]
  * @param  {[type]} 'jobReady' [description]
@@ -18,13 +16,12 @@ jobQueue = new Queue("default");
  * @return {[type]}            [description]
  */
 jobQueue.on('jobReady', function job(job) {
-    var data = JSON.parse(job.data),
-        worker, crawler, queue;
-    // build your worker here and pass it in
-    worker = data.worker == "backlinks" ? new Backlinks() : new Confluence();
-    crawler = new Crawler(data, worker, data.max_links);
+    var data = JSON.parse(job.data), worker, crawler, queue;
 
-    queue = crawler.makeQueue(data.link, job);
+    // build your worker here and pass it in
+    worker  = data.worker == "backlinks" ? new Backlinks() : new Confluence();
+    crawler = new Crawler(data, worker, data.max_links);
+    queue   = crawler.makeQueue(data.link, job);
 
     queue.drain = function() {                                             // Adds our drained
         console.log('all items processed\nFound %j', crawler.getStore());
