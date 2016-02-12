@@ -7,7 +7,7 @@ const Crawler    = require('./lib/crawler');
 const Backlinks  = require('./lib/backlinks');
 const Confluence = require('./lib/confluence');
 const Util       = require('util');
-const JobQueue   = new Queue("default");
+const JobQueue   = new Queue("links");
 
 /**
  * [on description]
@@ -21,7 +21,7 @@ JobQueue.on('jobReady', function jobReady(job) {
     worker  = data.worker == "backlinks" ? new Backlinks() : new Confluence();
     crawler = new Crawler(data, worker, data.max_links);
 
-    crawler.makeQueue(data.link, job, crawler, JobQueue);
+    crawler.start(data.link, job, crawler, JobQueue);
 });
 /**
  * [on description]
