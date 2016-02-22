@@ -17,10 +17,8 @@ const JobQueue   = new Queue("links");
  */
 JobQueue.on('jobReady', function jobReady(job) {
     let data = JSON.parse(job.data), worker, crawler, queue;
-    // build your worker here and pass it in
-    worker  = data.worker == "backlinks" ? new Backlinks() : new Confluence();
-    crawler = new Crawler(data, worker, data.max_links);
-
+    worker   = data.worker == "backlinks" ? new Backlinks() : new Confluence();   // build your worker here and pass it in
+    crawler  = new Crawler(data, worker, data.max_links);
     crawler.start(data.link, job, crawler, JobQueue);
 });
 /**
@@ -34,8 +32,8 @@ JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
     JobQueue.statsTube(function(data) {
         if (data['current-jobs-ready'] > 0) {              // still jobs ready
             JobQueue.getJob();
-        } else if (data['current-jobs-reserved'] > 0) {    // still running jobs
         }
+        else if (data['current-jobs-reserved'] > 0) {  }   // still running jobs
         else {
             JobQueue.emit('noJob');                        // queue empty
         }
@@ -56,11 +54,11 @@ JobQueue.on('noJob', function noJob() {
 JobQueue.statsTube(function(data) {
    if (data['current-jobs-ready'] > 5) {             // run 5 jobs at a time
        let jobs = 5;
-       let int = setInterval(function() {
+       let intv = setInterval(function() {
            Util.log("Starting %d", jobs);
            JobQueue.getJob();
            jobs--;
-           if (jobs === 0) { clearInterval(int); }
+           if (jobs === 0) { clearInterval(intv); }
        }, 2000);
    } else {
        JobQueue.getJob();                            // run only one job
