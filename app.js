@@ -19,6 +19,7 @@ JobQueue.on('jobReady', function jobReady(job) {
     let data = JSON.parse(job.data), worker, crawler, queue;
     worker   = data.worker == "backlinks" ? new Backlinks() : new Confluence();   // build your worker here and pass it in
     crawler  = new Crawler(data, worker, data.max_links);
+    
     crawler.start(data.link, job, crawler, JobQueue);
 });
 /**
