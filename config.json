@@ -1,5 +1,6 @@
 {
     "useMongo": true,
+    "debug": false,
     "asyncConurrency": 2,
     "max_links": 100,
     "rate": 5000,

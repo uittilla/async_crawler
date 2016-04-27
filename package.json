@@ -3,7 +3,7 @@
   "preferGlobal": true,
   "version": "0.0.5",
   "author": "Ibbo (mark.ibbotson)",
-  "description": "a simple web crawler using async",
+  "description": "ES6 web crawler, utilises async.queue",
   "contributors": [
     {
       "name": "",

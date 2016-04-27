@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 daemon=beanstalkd
 executable=/usr/local/bin/$daemon
