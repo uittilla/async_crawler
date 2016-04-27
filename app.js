@@ -1,14 +1,60 @@
 #!/usr/bin/env node
-/* jslint -W033, -W104 */
+/* jslint -W033, -W104, -W040, -W117, -W030 */
 'use strict';
 
 const Queue      = require('./lib/queue');
 const Crawler    = require('./lib/crawler');
 const Backlinks  = require('./lib/backlinks');
 const Confluence = require('./lib/confluence');
+const Mongo      = require('./lib/mongodb');
+const Config     = require('./config.json');
 const Util       = require('util');
+const Url        = require('url');
 const JobQueue   = new Queue("links");
 
+/**
+ * [doMongo handles job results to mongo]
+ * @param  {object} crawler
+ * @param  {object} jobQueue
+ * @return {null}
+ */
+function doMongo (crawler, jobQueue, job) {
+    const self=this;
+
+    Util.log('all items processed');
+
+    let MongoDb = new Mongo();
+
+    MongoDb.on('mongoConnect', function(db){
+        saveMongo(MongoDb, db, crawler);
+    });
+
+    MongoDb.on('mongoSaved', function(db) {
+        mongoSaved(jobQueue, job, db, crawler);
+        MongoDb.close(db);
+    });
+
+    MongoDb.connect();
+}
+/**
+ * [saveMongo Saves reasults to mongo]
+ * @param  {mongo} db database fd
+ * @return {object} crawler crawler object
+ */
+function saveMongo(MongoDb, db, crawler) {
+    MongoDb.save(db, crawler.getStore());
+}
+/**
+ * [mongoSaved event to signal succesfull save]
+ * @param  {object} queue object
+ * @param  {json} job job payload
+ * @param  {mongo} db database fd
+ * @param  {object} crawler crawler instance
+ * @return null
+ */
+function mongoSaved(jobQueue, job, db, crawler) {
+    jobQueue.deleteJob(job.id, crawler);
+}
 /**
  * [on description]
  * @param  {event}      'jobReady'
@@ -19,8 +65,14 @@ JobQueue.on('jobReady', function jobReady(job) {
     let data = JSON.parse(job.data), worker, crawler, queue;
     worker   = data.worker == "backlinks" ? new Backlinks() : new Confluence();   // build your worker here and pass it in
     crawler  = new Crawler(data, worker, data.max_links);
-    
-    crawler.start(data.link, job, crawler, JobQueue);
+
+    queue = crawler.start(data.link, job);
+
+    queue.drain = function() {                                                    // Adds our drained
+        Config.useMongo ?
+        doMongo(crawler, JobQueue, job) :
+        Util.log('All items processed\nFound %j', crawler.getStore());
+    }
 });
 /**
  * [on description]
@@ -62,6 +114,7 @@ JobQueue.statsTube(function(data) {
            if (jobs === 0) { clearInterval(intv); }
        }, 2000);
    } else {
+       Util.log("Getting next job");
        JobQueue.getJob();                            // run only one job
    }
 });
