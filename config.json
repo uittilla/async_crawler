@@ -1,5 +1,6 @@
 {
     "useMongo": true,
+    "mongoConn": "mongodb://localhost:27017/crawler",
     "debug": false,
     "asyncConurrency": 2,
     "max_links": 100,
