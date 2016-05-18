@@ -68,9 +68,13 @@ JobQueue.on('jobReady', function jobReady(job) {
     queue    = crawler.start(data.link, job);                                     // make our async queue
 
     queue.drain = function() {                                                    // Adds our drained
-        Config.useMongo ?                                                         // use mongo ?
-        doMongo(crawler, JobQueue, job) :
-        Util.log('All items processed\nFound %j', crawler.getStore());
+        if(Config.useMongo) {                                                         // use mongo ?
+            doMongo(crawler, JobQueue, job);
+        } else {
+            Util.log('All items processed\nFound %j', crawler.getStore());
+            crawler = null;
+            JobQueue.deleteJob(job.id, crawler);
+        }
     }
 });
 /**
@@ -96,7 +100,9 @@ JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
  */
 JobQueue.on('noJob', function noJob() {
     Util.log("Job Queue now empty, ....");
-    process.exit();
+    process.nextTick(function(){
+        process.exit();
+    });
 });
 /**
  * statsTube description
@@ -112,8 +118,12 @@ JobQueue.statsTube(function(data) {
            jobs--;
            if (jobs === 0) { clearInterval(intv); }
        }, 1000);
-   } else {
-       Util.log("Getting next job");
+   }
+   else if(!data['current-jobs-ready']) {
+       JobQueue.emit('noJob');
+   }
+   else {
+       Util.log("Getting next job", data['current-jobs-ready']);
        JobQueue.getJob();                                                         // run only one job
    }
 });

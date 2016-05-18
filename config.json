@@ -1,5 +1,5 @@
 {
-    "useMongo": true,
+    "useMongo": false,
     "mongoConn": "mongodb://localhost:27017/crawler",
     "debug": false,
     "asyncConurrency": 2,
