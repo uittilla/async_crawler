@@ -9,7 +9,6 @@ const Confluence = require('./lib/confluence');
 const Mongo      = require('./lib/mongodb');
 const Config     = require('./config.json');
 const Util       = require('util');
-const Url        = require('url');
 const JobQueue   = new Queue("links");
 
 /**
@@ -19,8 +18,6 @@ const JobQueue   = new Queue("links");
  * @return {null}
  */
 function doMongo (crawler, jobQueue, job) {
-    const self=this;
-
     Util.log('all items processed');
 
     let MongoDb = new Mongo();
@@ -38,7 +35,9 @@ function doMongo (crawler, jobQueue, job) {
 }
 /**
  * [saveMongo Saves reasults to mongo]
- * @param  {mongo} db database fd
+ * @param  {object} MongoDb instace
+ * @param  {object} db fd
+ * @param  {object} crawler
  * @return null
  */
 function saveMongo(MongoDb, db, crawler) {
@@ -46,7 +45,7 @@ function saveMongo(MongoDb, db, crawler) {
 }
 /**
  * [mongoSaved event to signal succesfull save]
- * @param  {object} queue object
+ * @param  {object} jobQueue object
  * @param  {json} job job payload
  * @param  {mongo} db database fd
  * @param  {object} crawler crawler instance
