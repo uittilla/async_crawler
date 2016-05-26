@@ -1,10 +1,10 @@
 #!/bin/bash
 
-daemon=beanstalkd
-executable=/usr/local/bin/$daemon
-port=11300
-waldir=/usr/local/var/beanstalkd
-logfile=/usr/local/var/log/beanstalkd.log
+daemon="beanstalkd"
+executable="/usr/local/bin/$daemon"
+port="11300"
+waldir="/usr/local/var/beanstalkd"
+logfile="/usr/local/var/log/beanstalkd.log"
 interface="127.0.0.1"
 params="-l $interface -p $port -b $waldir"
 

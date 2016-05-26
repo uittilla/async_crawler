@@ -9,7 +9,6 @@ const Confluence = require('./lib/confluence');
 const Mongo      = require('./lib/mongodb');
 const Config     = require('./config.json');
 const Util       = require('util');
-const Url        = require('url');
 const JobQueue   = new Queue("links");
 
 /**
@@ -19,8 +18,6 @@ const JobQueue   = new Queue("links");
  * @return {null}
  */
 function doMongo (crawler, jobQueue, job) {
-    const self=this;
-
     Util.log('all items processed');
 
     let MongoDb = new Mongo();
@@ -38,15 +35,17 @@ function doMongo (crawler, jobQueue, job) {
 }
 /**
  * [saveMongo Saves reasults to mongo]
- * @param  {mongo} db database fd
- * @return {object} crawler crawler object
+ * @param  {object} MongoDb instace
+ * @param  {object} db fd
+ * @param  {object} crawler
+ * @return null
  */
 function saveMongo(MongoDb, db, crawler) {
     MongoDb.save(db, crawler.getStore());
 }
 /**
  * [mongoSaved event to signal succesfull save]
- * @param  {object} queue object
+ * @param  {object} jobQueue object
  * @param  {json} job job payload
  * @param  {mongo} db database fd
  * @param  {object} crawler crawler instance
@@ -64,14 +63,17 @@ function mongoSaved(jobQueue, job, db, crawler) {
 JobQueue.on('jobReady', function jobReady(job) {
     let data = JSON.parse(job.data), worker, crawler, queue;
     worker   = data.worker == "backlinks" ? new Backlinks() : new Confluence();   // build your worker here and pass it in
-    crawler  = new Crawler(data, worker, data.max_links);
-
-    queue = crawler.start(data.link, job);
+    crawler  = new Crawler(data, worker, data.max_links);                         // instantiate the crawler
+    queue    = crawler.start(data.link, job);                                     // make our async queue
 
     queue.drain = function() {                                                    // Adds our drained
-        Config.useMongo ?
-        doMongo(crawler, JobQueue, job) :
-        Util.log('All items processed\nFound %j', crawler.getStore());
+        if(Config.useMongo) {                                                         // use mongo ?
+            doMongo(crawler, JobQueue, job);
+        } else {
+            Util.log('All items processed\nFound %j', crawler.getStore());
+            crawler = null;
+            JobQueue.deleteJob(job.id, crawler);
+        }
     }
 });
 /**
@@ -83,12 +85,12 @@ JobQueue.on('jobReady', function jobReady(job) {
 JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
     Util.log("Deleted", id, msg);
     JobQueue.statsTube(function(data) {
-        if (data['current-jobs-ready'] > 0) {              // still jobs ready
+        if (data['current-jobs-ready'] > 0) {                                     // still jobs ready
             JobQueue.getJob();
         }
-        else if (data['current-jobs-reserved'] > 0) {  }   // still running jobs
+        else if (data['current-jobs-reserved'] > 0) {  }                          // still running jobs
         else {
-            JobQueue.emit('noJob');                        // queue empty
+            JobQueue.emit('noJob');                                               // queue empty
         }
     });
 });
@@ -97,7 +99,9 @@ JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
  */
 JobQueue.on('noJob', function noJob() {
     Util.log("Job Queue now empty, ....");
-    process.exit();
+    process.nextTick(function(){
+        process.exit();
+    });
 });
 /**
  * statsTube description
@@ -105,16 +109,20 @@ JobQueue.on('noJob', function noJob() {
  * @return {null}
  */
 JobQueue.statsTube(function(data) {
-   if (data['current-jobs-ready'] > 5) {             // run 5 jobs at a time
+   if (data['current-jobs-ready'] > 5) {                                          // run 5 jobs at a time
        let jobs = 5;
        let intv = setInterval(function() {
            Util.log("Starting %d", jobs);
            JobQueue.getJob();
            jobs--;
            if (jobs === 0) { clearInterval(intv); }
-       }, 2000);
-   } else {
-       Util.log("Getting next job");
-       JobQueue.getJob();                            // run only one job
+       }, 1000);
+   }
+   else if(!data['current-jobs-ready']) {
+       JobQueue.emit('noJob');
+   }
+   else {
+       Util.log("Getting next job", data['current-jobs-ready']);
+       JobQueue.getJob();                                                         // run only one job
    }
 });
