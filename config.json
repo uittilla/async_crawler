@@ -1,7 +1,7 @@
 {
-    "useMongo": false,
+    "useMongo": true,
     "mongoConn": "mongodb://localhost:27017/crawler",
-    "debug": false,
+    "debug": true,
     "asyncConurrency": 2,
     "max_links": 100,
     "rate": 5000,

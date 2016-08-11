@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 /* jslint -W033, -W104, -W040, -W117, -W030 */
 'use strict';
-
+const debug      = require('debug')('app');
+const Util       = require('util');
 const Queue      = require('./lib/queue');
 const Crawler    = require('./lib/crawler');
 const Backlinks  = require('./lib/backlinks');
 const Confluence = require('./lib/confluence');
 const Mongo      = require('./lib/mongodb');
 const Config     = require('./config.json');
-const Util       = require('util');
+
 const JobQueue   = new Queue("links");
 
 /**
@@ -18,7 +19,7 @@ const JobQueue   = new Queue("links");
  * @return {null}
  */
 function doMongo (crawler, jobQueue, job) {
-    Util.log('all items processed');
+    debug('all items processed');
 
     let MongoDb = new Mongo();
 
@@ -70,7 +71,7 @@ JobQueue.on('jobReady', function jobReady(job) {
         if(Config.useMongo) {                                                         // use mongo ?
             doMongo(crawler, JobQueue, job);
         } else {
-            Util.log('All items processed\nFound %j', crawler.getStore());
+            debug('All items processed\nFound %j', crawler.getStore());
             crawler = null;
             JobQueue.deleteJob(job.id, crawler);
         }
@@ -83,7 +84,7 @@ JobQueue.on('jobReady', function jobReady(job) {
  * @return {null}
  */
 JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
-    Util.log("Deleted", id, msg);
+    debug("Deleted %d, %s", id, msg);
     JobQueue.statsTube(function(data) {
         if (data['current-jobs-ready'] > 0) {                                     // still jobs ready
             JobQueue.getJob();
@@ -98,7 +99,7 @@ JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
  * Job removed
  */
 JobQueue.on('noJob', function noJob() {
-    Util.log("Job Queue now empty, ....");
+    debug("Job Queue now empty, ....");
     process.nextTick(function(){
         process.exit();
     });
@@ -112,7 +113,7 @@ JobQueue.statsTube(function(data) {
    if (data['current-jobs-ready'] > 5) {                                          // run 5 jobs at a time
        let jobs = 5;
        let intv = setInterval(function() {
-           Util.log("Starting %d", jobs);
+           debug("Starting %d", jobs);
            JobQueue.getJob();
            jobs--;
            if (jobs === 0) { clearInterval(intv); }
@@ -122,7 +123,7 @@ JobQueue.statsTube(function(data) {
        JobQueue.emit('noJob');
    }
    else {
-       Util.log("Getting next job", data['current-jobs-ready']);
+       debug("Getting next job %d", data['current-jobs-ready']);
        JobQueue.getJob();                                                         // run only one job
    }
 });
