@@ -7,6 +7,8 @@ const Queue      = require('./lib/queue');
 const Crawler    = require('./lib/crawler');
 const Backlinks  = require('./lib/backlinks');
 const Confluence = require('./lib/confluence');
+const Youtube    = require('./lib/youtube');
+const Serps      = require('./lib/serps');
 const Mongo      = require('./lib/mongodb');
 const Config     = require('./config.json');
 
@@ -18,7 +20,7 @@ const JobQueue   = new Queue("links");
  * @param  {object} jobQueue
  * @return {null}
  */
-function doMongo (crawler, jobQueue, job) {
+function doMongo(crawler, jobQueue, job){
     debug('all items processed');
 
     let MongoDb = new Mongo();
@@ -63,12 +65,27 @@ function mongoSaved(jobQueue, job, db, crawler) {
  */
 JobQueue.on('jobReady', function jobReady(job) {
     let data = JSON.parse(job.data), worker, crawler, queue;
-    worker   = data.worker == "backlinks" ? new Backlinks() : new Confluence();   // build your worker here and pass it in
+
+    switch (data.worker) {                                                       // worker defined in pushjob
+        case "serps":
+            worker = new Serps();
+        break;
+        case "backlinks":
+            worker = new Backlinks();
+        break;
+        case 'youtube':
+            worker = new Youtube();
+        break;
+        default:
+            worker = new Confluence();
+        break;
+    }
+
     crawler  = new Crawler(data, worker, data.max_links);                         // instantiate the crawler
     queue    = crawler.start(data.link, job);                                     // make our async queue
 
     queue.drain = function() {                                                    // Adds our drained
-        if(Config.useMongo) {                                                         // use mongo ?
+        if(Config.useMongo) {                                                     // use mongo ?
             doMongo(crawler, JobQueue, job);
         } else {
             debug('All items processed\nFound %j', crawler.getStore());
