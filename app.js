@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* jslint -W033, -W104, -W040, -W117, -W030 */
 'use strict';
+
 const debug      = require('debug')('app');
 const Util       = require('util');
 const Queue      = require('./lib/queue');
@@ -89,8 +90,8 @@ JobQueue.on('jobReady', function jobReady(job) {
             doMongo(crawler, JobQueue, job);
         } else {
             debug('All items processed\nFound %j', crawler.getStore());
-            crawler = null;
             JobQueue.deleteJob(job.id, crawler);
+            crawler = null;
         }
     }
 });
@@ -104,6 +105,7 @@ JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
     debug("Deleted %d, %s", id, msg);
     JobQueue.statsTube(function(data) {
         if (data['current-jobs-ready'] > 0) {                                     // still jobs ready
+            debug('here we go')
             JobQueue.getJob();
         }
         else if (data['current-jobs-reserved'] > 0) {  }                          // still running jobs
@@ -122,25 +124,34 @@ JobQueue.on('noJob', function noJob() {
     });
 });
 /**
+ * BEGIN
  * statsTube description
  * @param  {function} (data json
  * @return {null}
  */
-JobQueue.statsTube(function(data) {
-   if (data['current-jobs-ready'] > 5) {                                          // run 5 jobs at a time
-       let jobs = 5;
-       let intv = setInterval(function() {
-           debug("Starting %d", jobs);
-           JobQueue.getJob();
-           jobs--;
-           if (jobs === 0) { clearInterval(intv); }
-       }, 1000);
-   }
-   else if(!data['current-jobs-ready']) {
-       JobQueue.emit('noJob');
-   }
-   else {
-       debug("Getting next job %d", data['current-jobs-ready']);
-       JobQueue.getJob();                                                         // run only one job
-   }
-});
+function stats() {
+    JobQueue.statsTube(function (data) {
+        if (data['current-jobs-ready'] > 5) {                                          // run 5 jobs at a time
+            let jobs = 5;
+            let intv = setInterval(function () {
+                debug("Starting %d", jobs);
+                JobQueue.getJob();
+                jobs--;
+                if (jobs === 0) {
+                    clearInterval(intv);
+                }
+            }, 1000);
+        }
+        else if (!data['current-jobs-ready']) {
+            JobQueue.emit('noJob');
+        }
+        else {
+            debug("Getting next job %d", data['current-jobs-ready']);
+            JobQueue.getJob();                                                         // run only one job
+        }
+    });
+}
+
+stats();
+
+//module.exports.stats = stats;
