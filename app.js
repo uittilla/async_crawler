@@ -9,6 +9,7 @@ const Crawler    = require('./lib/crawler');
 const Backlinks  = require('./lib/backlinks');
 const Confluence = require('./lib/confluence');
 const Youtube    = require('./lib/youtube');
+const Images     = require('./lib/images');
 const Serps      = require('./lib/serps');
 const Mongo      = require('./lib/mongodb');
 const Config     = require('./config.json');
@@ -77,6 +78,9 @@ JobQueue.on('jobReady', function jobReady(job) {
         case 'youtube':
             worker = new Youtube();
         break;
+        case 'images':
+            worker = new Images();
+        break;
         default:
             worker = new Confluence();
         break;
@@ -108,7 +112,9 @@ JobQueue.on('jobDeleted', function jobDeleted(id, msg, crawler) {
             debug('here we go')
             JobQueue.getJob();
         }
-        else if (data['current-jobs-reserved'] > 0) {  }                          // still running jobs
+        else if (data['current-jobs-reserved'] > 0) { 
+        //   JobQueue.getJob()                
+        }                                                                         // still running jobs
         else {
             JobQueue.emit('noJob');                                               // queue empty
         }
@@ -131,8 +137,12 @@ JobQueue.on('noJob', function noJob() {
  */
 function stats() {
     JobQueue.statsTube(function (data) {
-        if (data['current-jobs-ready'] > 5) {                                          // run 5 jobs at a time
-            let jobs = 5;
+
+        debug("---------- current-jobs-ready -------------");
+        debug(data['current-jobs-ready']);
+
+        if (data['current-jobs-ready'] > 4) {                                          // run 5 jobs at a time
+            let jobs = 4;
             let intv = setInterval(function () {
                 debug("Starting %d", jobs);
                 JobQueue.getJob();

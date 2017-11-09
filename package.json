@@ -13,7 +13,8 @@
   "scripts": {
     "test": "npm run test-unit",
     "test-unit": "NODE_ENV=test mocha --require co-mocha '*.spec.js'",
-    "start": "node ./app.js"
+    "run-script": "node ./lib/pushJobs.js",
+    "start": "DEBUG=* node ./app.js"
   },
   "repository": {
     "type": "git",
