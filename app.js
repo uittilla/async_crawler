@@ -27,11 +27,11 @@ function doMongo(crawler, jobQueue, job){
 
     let MongoDb = new Mongo();
 
-    MongoDb.on('mongoConnect', function(db){
+    MongoDb.on('mongoConnect', (db) => {
         saveMongo(MongoDb, db, crawler);
     });
 
-    MongoDb.on('mongoSaved', function(db) {
+    MongoDb.on('mongoSaved', (db) => {
         mongoSaved(jobQueue, job, db, crawler);
         MongoDb.close(db);
     });
@@ -136,14 +136,14 @@ JobQueue.on('noJob', function noJob() {
  * @return {null}
  */
 function stats() {
-    JobQueue.statsTube(function (data) {
+    JobQueue.statsTube( (data) => {
 
         debug("---------- current-jobs-ready -------------");
         debug(data['current-jobs-ready']);
 
         if (data['current-jobs-ready'] > 4) {                                          // run 5 jobs at a time
             let jobs = 4;
-            let intv = setInterval(function () {
+            let intv = setInterval( () => {
                 debug("Starting %d", jobs);
                 JobQueue.getJob();
                 jobs--;
